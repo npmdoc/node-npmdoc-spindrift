@@ -1,1 +1,39 @@
-{     "devDependencies": {         "spindrift": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-spindrift",     "homepage": "https://github.com/npmdoc/node-npmdoc-spindrift",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-spindrift.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [spindrift (v0.0.6)](https://github.com/tcr/spindrift#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-spindrift.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-spindrift) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-spindrift.svg)](https://travis-ci.org/npmdoc/node-npmdoc-spindrift)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "spindrift": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-spindrift",
+    "keywords": [
+        "documentation",
+        "spindrift"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_spindrift.js",
+    "name": "npmdoc-spindrift",
+    "nameAlias": "npmdoc_spindrift",
+    "nameOriginal": "npmdoc-spindrift",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-spindrift.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
