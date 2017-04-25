@@ -1,4 +1,7 @@
-# api documentation for  [spindrift (v0.0.6)](https://github.com/tcr/spindrift#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-spindrift.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-spindrift) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-spindrift.svg)](https://travis-ci.org/npmdoc/node-npmdoc-spindrift)
+# npmdoc-spindrift
+
+#### basic api documentation for  [spindrift (v0.0.6)](https://github.com/tcr/spindrift#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-spindrift.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-spindrift) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-spindrift.svg)](https://travis-ci.org/npmdoc/node-npmdoc-spindrift)
+
 #### PDF manipulation in Node.js! Split, join, crop, read, extract, boil, mash, stick them in a stew.
 
 [![NPM](https://nodei.co/npm/spindrift.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/spindrift)
@@ -60,7 +63,8 @@
         "type": "git",
         "url": "git+https://github.com/tcr/spindrift.git"
     },
-    "version": "0.0.6"
+    "version": "0.0.6",
+    "bin": {}
 }
 ```
 
